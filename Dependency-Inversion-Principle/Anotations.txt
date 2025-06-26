@@ -1,0 +1,42 @@
+﻿Princípio de inversão de dependência
+
+O Princípio da Inversão de Dependência afirma que módulos de alto nível não devem depender de módulos de baixo nível, mas 
+ambos devem depender de abstrações.
+
+Módolo de alto nível -> É a camada de front-end, do xaml até a ViewModel.
+Módolo de baixo nível -> Seria o back-end, da camada de serviços ao acesso de dados
+Abstrações -> É uma interface, que é colocada entre os módolos acima.
+
+Geralmente naturalmente há acoplamento porque quando aperto um botão uma ação vai do front até o back, assim fazendo com que uma alteração 
+em um módolo cause a necessidade de alteração no outro. Então pra evitar isso usamos interface.
+O front vai depender da inerface e o back vai implementar essa interface.
+
+
+Diferenças entre Inversão de Dependência (ID) e Inversão de Controle (IoC)
+
+Inversão de Dependência (ID):
+A Inversão de Dependência é um princípio de design que visa reduzir o acoplamento entre módulos ou componentes em um sistema.
+Em vez de os módulos dependerem diretamente de outros módulos concretos, eles devem depender de abstrações (interfaces ou classes base).
+Isso permite maior flexibilidade e facilita a substituição de implementações concretas sem afetar o restante do sistema.
+Exemplo: em vez de uma classe de serviço depender diretamente de uma classe de repositório concreta, ela deve depender de uma interface de repositório.
+
+Inversão de Controle (IoC):
+A Inversão de Controle é um padrão mais amplo que abrange a inversão do fluxo de controle em um sistema.
+Em vez de os componentes controlarem seu próprio fluxo de execução, o controle é transferido para um contêiner ou framework.
+O IoC geralmente é implementado usando injeção de dependência (DI), onde as dependências são injetadas nos componentes em tempo de execução.
+Exemplo: um contêiner de DI gerencia a criação e injeção de dependências em uma aplicação, permitindo que os componentes se concentrem apenas em suas responsabilidades específicas.
+Em resumo:
+
+Inversão de Dependência trata da dependência entre módulos.
+Inversão de Controle trata da transferência do controle de fluxo para um contêiner ou framework.
+
+A injeção de Dependência é um padrão em que conseguimos aplicar o IoC.
+
+Onde para o Injeção de Dependência o fluxo de criração de intâncias é feito pelo serviço DI, onde esse serviço pode ter 3 tempos
+
+- Transient: (AddTransient), São criados cada vez que é solicitado, ou seja, para cada requisição um novo serviço é criado
+- Scoped: (AddScoped), Se numa mesma requisição a injeção for usada mais de uma vez, a instânncia é sempre a mesma. Esse é mais usado em Web.
+- Singleton: (AddSingleton), é levamtado uma única intãncia do serviço durante a vida´útil da aplicação.
+
+
+
