@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface_Segregation_Principle", "Interface_Segregation_Principle.csproj", "{922BEF02-259E-4F1A-B696-09A887975681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{922BEF02-259E-4F1A-B696-09A887975681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922BEF02-259E-4F1A-B696-09A887975681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922BEF02-259E-4F1A-B696-09A887975681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922BEF02-259E-4F1A-B696-09A887975681}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5439F7CA-3543-43B0-BB45-445316CF5B55}
+	EndGlobalSection
+EndGlobal
